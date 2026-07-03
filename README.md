@@ -62,21 +62,6 @@ Search for the following placeholders in `index.html` and replace them:
 .real-image { padding: 0; }
 .real-image img { width: 100%; height: 100%; object-fit: cover; }
 .real-image .image-kicker { position: absolute; top: 18px; left: 18px; }
-```
+``
 
-## Publish through GitHub Pages
 
-This repository is named correctly for a personal GitHub Pages site: `azmatullahkhan.github.io`.
-
-1. Open the repository on GitHub.
-2. Upload the **contents** of this folder to the repository root (not the parent folder itself).
-3. Commit the upload to the `main` branch.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-6. Set **Branch** to `main` and the folder to `/(root)`.
-7. Click **Save**.
-8. Your website will publish at `https://azmatullahkhan.github.io/` after GitHub finishes deployment.
-
-## Important
-
-Do not upload the ZIP file itself to GitHub Pages. First extract it, then upload all the files and folders inside it.
