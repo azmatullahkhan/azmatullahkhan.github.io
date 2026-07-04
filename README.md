@@ -1,67 +1,31 @@
-# Azmat Ullah Khan — Portfolio Website
+# Azmat Ullah — Research Portfolio
 
-A static, responsive personal research portfolio designed for GitHub Pages. It uses only HTML, CSS, and JavaScript—no installation, Jekyll, Node.js, or build process required.
+This package is the corrected version of the previous researcher portfolio.
 
-## Before publishing
+## What is now included
 
-Search for the following placeholders in `index.html` and replace them:
+- CV content integrated into the webpage: education, research appointments, startup role, technical profile, publications, and under-review manuscripts.
+- Visible links in the hero and contact sections for Email, GitHub, Google Scholar, LinkedIn, and ORCID.
+- Four visible SVG research illustrations already placed in `assets/images/`, so project cards will no longer be blank after upload.
+- Your CV PDF included at `assets/documents/Azmat_Ullah_Khan_CV.pdf`.
 
-1. `your.email@example.com` — your actual contact email.
-2. `assets/documents/Azmat_Ullah_Khan_CV.pdf` — upload your CV under this exact file name, or edit the link.
-3. `Add DOI`, `Add project page`, and all placeholder publication information.
-4. The profile-photo placeholder in the `#about` section.
-5. The four abstract project image blocks. You can replace their backgrounds with real project images later.
+## Website files
 
-## Add your photo
+- `index.html` — website content
+- `assets/css/style.css` — visual styling
+- `assets/js/main.js` — mobile menu
+- `assets/images/*.svg` — visible project visuals
+- `assets/documents/Azmat_Ullah_Khan_CV.pdf` — downloadable CV
 
-1. Upload a photo as `assets/images/profile.jpg`.
-2. In `index.html`, find this block:
+## Before upload
 
-```html
-<div class="portrait-placeholder" role="img" aria-label="Placeholder for Azmat Ullah Khan profile photograph">
-```
+Open `index.html` only if you want to refine wording or replace the illustrative SVG files with real manuscript figures later. The current page is ready to upload as-is.
 
-3. Replace it with:
+## Upload to GitHub Pages
 
-```html
-<img class="profile-photo" src="assets/images/profile.jpg" alt="Azmat Ullah Khan">
-```
-
-4. Add this CSS to the end of `assets/css/style.css`:
-
-```css
-.profile-photo {
-  width: 100%;
-  aspect-ratio: .84;
-  object-fit: cover;
-  border-radius: 15px;
-}
-```
-
-## Replace a project visual
-
-1. Upload an image to `assets/images`, for example: `fontan-pinn.png`.
-2. Find the project link beginning with:
-
-```html
-<a class="project-image image-fontan"
-```
-
-3. Replace the class-based visual with an image element, for example:
-
-```html
-<a class="project-image real-image" href="projects/fontan-pinn.html">
-  <img src="assets/images/fontan-pinn.png" alt="High-resolution Fontan flow reconstruction from a physics-informed neural network">
-  <span class="image-kicker">Computational hemodynamics</span>
-</a>
-```
-
-4. Add this CSS:
-
-```css
-.real-image { padding: 0; }
-.real-image img { width: 100%; height: 100%; object-fit: cover; }
-.real-image .image-kicker { position: absolute; top: 18px; left: 18px; }
-``
-
-
+1. Extract the ZIP.
+2. Open `azmatullahkhan.github.io` on GitHub.
+3. Upload the **contents** of this folder into the repository root. Do not upload the outer folder itself.
+4. Replace old `index.html` and `assets` files.
+5. Commit changes.
+6. In repository **Settings → Pages**, set **Deploy from a branch → main → /(root)**.
